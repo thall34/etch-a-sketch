@@ -2,27 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch a Sketch</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="header">
-        <div class="title">Etch-A-Sketch</div>
-        <div>Hit reset to get started</div>
-        <button type="button" id="reset">Reset</button>
-    </div>
+    <header>
+        <h1 class="title">Etch-A-Sketch</h1>
+        <p>Hit reset to clear the sketchpad and set grid size of sketchpad</p>
+    </header>
+    <button type="button" id="reset">Reset</button>
     <div class="sketchpad">
-        <img src="./images/logo.png" class="image" alt="Etch a Sketch Logo" height="50px" width="300px">
-        <div id="container">
-            <script src="etchSketch.js"></script>
-        </div>
+        <section id="container"></section>
         <div id="bottom-row">
             <div class="knob"></div>
             <div class="knob"></div>
         </div>
     </div>
-    <div id="footer">
-        <div id="company">Copyright © Whitehall Web Development 2025</div>
-    </div>
+    <footer>
+        <footer>Copyright © Tyler Hall 2026</footer>
+    </footer>
+
+    <script src="etchSketch.js"></script>
 </body>
 </html>

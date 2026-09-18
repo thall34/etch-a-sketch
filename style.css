@@ -1,40 +1,54 @@
-html {
-    height: 100%;
-    width: 100%;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
 body {
     display: flex;
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
-    border: 0;
-    padding: 0;
     font-family: 'Lucida Sans', Verdana, sans-serif;
+    font-size: 12px;
+    background-color: rgb(253, 253, 253);
 }
 
-#header, #footer {
+p {
+    font-size: 1.5em;
+}
+
+header, footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px;
-    gap: 25px;
+    width: 100%;
+    padding: 2em;
+    gap: 2em;
+    font-size: 1.2em;
+    background-color: red;
+    color: white;
+}
+
+footer {
+    padding: 1em;
 }
 
 .title {
-    font-size: 32px;
+    font-size: 3em;
 }
 
 button {
-    font-size: 16px;
+    font-size: 2em;
+    padding: 0.6em 1em;
+    border: solid 0.1em black;
+    background-color: red;
+    border-radius: 0.5em;
+    color: white;
     width: fit-content;
-}
-
-.company {
-    font-size: 16px;
 }
 
 .sketchpad {
@@ -43,38 +57,35 @@ button {
     align-items: center;
     justify-content: center;
     background-color: red;
-    width: 800px;
-    height: 800px;
-    border-radius: 50px;
+    border-radius: 3em;
+    padding: 5em;
+    padding-bottom: 2em;
+    border: 0.3em solid black;
 }
 
 #bottom-row {
     display: flex;
     justify-content: space-between;
-    width: 700px;
-    padding-top: 25px;
-    padding-bottom: 50px;
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 3em;
     align-items: center;
-}
-
-.image {
-    padding: 25px;
 }
 
 .knob {
     background-color: white;
     border: solid;
     border-color: black;
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
 }
 
 #container {
     display: flex;
     flex-direction: column;
-    width: 600px;
-    height: 600px;
+    width: 40em;
+    height: 40em;
     justify-content: center;
     border: solid;
     border-color: black;
@@ -88,13 +99,19 @@ button {
 
 .col-item {
     flex: 1 1 0;
-    border: solid;
+    border: 1px solid;
     border-color: black;
 }
 
 .col-item-fill {
     flex: 1 1 0;
-    border: solid;
+    border: 1px solid;
     border-color: black;
     background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 6px;
+    }
 }
